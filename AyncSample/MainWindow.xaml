@@ -1,0 +1,12 @@
+﻿<Window x:Class="AyncSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <Button Click="Sync_Click">SyncAdd</Button>
+            <Button Click="Async_Click">AsyncAdd</Button>
+            <TextBox>Hello</TextBox>
+        </StackPanel>
+    </Grid>
+</Window>

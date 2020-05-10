@@ -1,0 +1,16 @@
+﻿<Window x:Class="BasicSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <Button Click="ArraySort_Click">ArraySort</Button>
+            <Button Click="FileIO_Click">_FileIO</Button>
+            <Button Click="Exceptions_Click">_Exceptions</Button>
+            <Button Click="Type_Click">_Type</Button>
+            <Button Click="StringAndArray_Click">StringAndArray</Button>
+            <TextBlock MinWidth="100" HorizontalAlignment="Right" TextAlignment="Right">_TestBlock</TextBlock>
+            <Label >_121saljflk123</Label>
+        </StackPanel>
+    </Grid>
+</Window>

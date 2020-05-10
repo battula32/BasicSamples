@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="BugSystem">
+  <DataContextMoniker Name="/BugSystemDataContext" />
+  <nestedChildShapes>
+    <classShape Id="12d4c796-e4ee-46af-bef7-0b37d477a853" absoluteBounds="0.5, 0.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/BugSystemDataContext/Bug" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d52eabc9-2d2c-404b-9d98-9ce51ae0d72f" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aa840e9a-f646-40ac-ac4c-2fb30787b3ae" absoluteBounds="3.375, 0.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/BugSystemDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f9f3315-143b-404b-a91a-a567543154b7" absoluteBounds="3.3899999999999997, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.375 : 1.34699625651042); (2.5 : 1.34699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BugSystemDataContext/Product/Product_Bug" />
+      <nodes>
+        <classShapeMoniker Id="aa840e9a-f646-40ac-ac4c-2fb30787b3ae" />
+        <classShapeMoniker Id="12d4c796-e4ee-46af-bef7-0b37d477a853" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

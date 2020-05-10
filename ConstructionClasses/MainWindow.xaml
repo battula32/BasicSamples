@@ -1,0 +1,15 @@
+﻿<Window x:Class="ConstructionClasses.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <Button Click="ThrowException_Click">TestCustomException</Button>
+            <Button Click="ThrowException1_Click">TestCustomException1</Button>            
+            <Button Click="Button_Click_1">Genirics</Button>
+            <Button Click="Button_Click_2">Generics1</Button>
+            <Button Click="Button_Click_3">Compare</Button>
+            <Button Click="Button_Click_4">Event</Button>
+        </StackPanel>
+    </Grid>
+</Window>

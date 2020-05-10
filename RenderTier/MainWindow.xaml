@@ -1,0 +1,16 @@
+﻿<Window x:Class="RenderTier.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Label VerticalAlignment="Bottom">Render Tier:</Label>
+            <TextBlock x:Name="renderTier" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        </StackPanel>
+        <Button Grid.Row="1" Click="Button_Click">Get Render Tier</Button>
+    </Grid>
+</Window>

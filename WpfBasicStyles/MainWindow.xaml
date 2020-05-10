@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="WpfBasicStyles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:x2h="clr-namespace:net.sylde.x2h;assembly=net.sylde.x2h"
+         Height="350" Width="525">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type TextBlock}"> <!--TargetType="TextBlock">-->
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style x:Key="myControlStyle" TargetType="{x:Type Control}">
+            <Setter Property="Background" Value="Blue"></Setter>
+        </Style>
+    </UserControl.Resources>
+    <x2h:Root Width="1300" Culture="en"
+              x2h:Inherited.FontFamily="Georgia" x2h:Inherited.FontSize="18"
+              x2h:Inherited.TextColor="#3c322c" x2h:Inherited.LinkColor="#0091c8">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <x2h:Button Grid.Row="0" Grid.Column="0" Height="23" Width="150" VerticalAlignment="Top">
+            <x2h:TextBlock Text="Hello"/>
+        </x2h:Button>
+        <x2h:Button Grid.Row="0" Grid.Column="1" Height="23" Width="150" VerticalAlignment="Top">
+            <x2h:TextBlock Text="There"/>
+        </x2h:Button>
+        <x2h:TextBlock Grid.Row="1" Grid.Column="0" Text="Hello"></x2h:TextBlock>
+        <x2h:TextBlock Grid.Row="1" Grid.Column="1" Text="Three"></x2h:TextBlock> <!--Style="{StaticResource textBlockStyle}" -->
+    </Grid>
+    </x2h:Root>
+</UserControl>

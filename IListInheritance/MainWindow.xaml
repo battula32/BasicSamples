@@ -1,0 +1,13 @@
+﻿<Window x:Class="IListInheritance.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <Button Click="IntList_Click">Int</Button>
+            <Button Click="DoubleList_Click">Double</Button>
+            <Button Click="StringList_Click">String</Button>
+            <Button Click="RemoveSameItems_Click">RemoveSameItems</Button>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,2 @@
+﻿This sample contains a progress bar and dispatch timer is added to this.
+Dispatch timer starts when you run the exe and timer stops if progress bar value is greater tham 200.

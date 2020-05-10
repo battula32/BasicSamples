@@ -1,0 +1,18 @@
+﻿<Window x:Class="FileSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <ListBox x:Name="listBox"></ListBox>
+            <Button Click="Button_Click">FileSystemWatcher</Button>
+            <Button Click="Button_Click_1">TextReader</Button>
+            <Button Click="Button_Click_2">StreamReader</Button>
+            <Button Click="Button_Click_3">BinaryWrite</Button>
+            <Button Click="Button_Click_4">BinaryRead</Button>
+            <Button Click="Button_Click_5">ReadAndWriteFormString</Button>
+            <Button Click="Button_Click_6">MemoryStream</Button>
+            <Button Click="Button_Click_7">FileCompression</Button>
+        </StackPanel>
+    </Grid>
+</Window>

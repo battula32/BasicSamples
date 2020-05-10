@@ -1,0 +1,1 @@
+﻿Reference msdn "http://msdn.microsoft.com/en-us/library/system.object.memberwiseclone.aspx"

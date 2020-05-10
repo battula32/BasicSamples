@@ -1,0 +1,112 @@
+﻿<Window x:Class="TimeConversion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="525">
+    <Grid>
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0">Enter minutes</Label>
+                <TextBox x:Name="minutes" Grid.Column="1"></TextBox>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Click="ConvertMinutes">Convert</Button>
+                <Label Grid.Column="1" x:Name="result"></Label>
+                
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label>f</Label>
+                <Label Grid.Column="1" x:Name="fResult"></Label>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label>F</Label>
+                <Label Grid.Column="1" x:Name="FResult"></Label>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label>d</Label>
+                <Label Grid.Column="1" x:Name="dResult"></Label>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label>D</Label>
+                <Label Grid.Column="1" x:Name="DResult"></Label>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label>g</Label>
+                <Label Grid.Column="1" x:Name="gResult"></Label>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label>G</Label>
+                <Label Grid.Column="1" x:Name="GResult"></Label>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label>m</Label>
+                <Label Grid.Column="1" x:Name="mResult"></Label>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label>M</Label>
+                <Label Grid.Column="1" x:Name="MResult"></Label>
+            </Grid>
+            <Button Click="Button_Click">Result</Button>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid Height="26" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                <Label >Convert Ticks to utc/local time</Label>
+                    <TextBox x:Name="TicsForConvertion" Grid.Column="1"></TextBox>
+                </Grid>
+                <TextBox x:Name="localUTCTime" Grid.Column="1" Grid.Row="0"></TextBox>
+                <Button Grid.Row="1" Grid.Column="0" Click="Button_Click_1">Convert to UTC</Button>
+                <Button Grid.Row="1" Grid.Column="1" Click="Button_Click_2">Convert to Local</Button>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

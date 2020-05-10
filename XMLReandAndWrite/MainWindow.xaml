@@ -1,0 +1,14 @@
+﻿<Window x:Class="XMLReandAndWrite.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <Button Click="ReadFromXml">Read</Button>
+            <Button Click="WriteToXml">Write</Button>
+            <Button Click="ReadXml_Click">Read1</Button>
+            <Button Click="Write_Click">Write1</Button>
+            <Button Name="Test" Click="Test_Click">Test</Button>
+        </StackPanel>
+    </Grid>
+</Window>

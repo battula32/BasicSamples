@@ -1,0 +1,29 @@
+﻿<Window x:Class="XMALCode.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Closing="Window_Closing">
+    <x:Code>
+        <![CDATA[
+            private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Closing event fired, Do u wnat to close", "Application", MessageBoxButton.YesNo);
+            if (result == MessageBoxResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+        ]]>
+    </x:Code>
+    <Grid>
+        <Button Width="100" Height="25" Name="appExit" Click="appExit_Cliked" Content="Exit" ></Button>
+        <x:Code>
+            <![CDATA[
+            private void appExit_Cliked(object sender, RoutedEventArgs e)
+            {
+                MessageBox.Show("Application shut down is fired, Every thing is from XAML"); 
+                Application.Current.Shutdown();
+            }
+            ]]>
+        </x:Code>
+    </Grid>
+</Window>
